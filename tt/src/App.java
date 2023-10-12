@@ -20,4 +20,7 @@ public class App {
         }
         return a;
     }
+    public static char[] disp(char[] a,int n){
+        return p(a, -n);
+    }
 }
