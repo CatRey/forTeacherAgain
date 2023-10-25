@@ -1,3 +1,7 @@
 public class Student extends Person {
-    super(23);
+    int age=0;
+    public Student(int age,String name){
+        super(23);
+        this.age=age;
+    }
 }
