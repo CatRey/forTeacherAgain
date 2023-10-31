@@ -1,8 +1,9 @@
 public class Unit {
-    private int hp = 100;
-    public String name;
+    private int hp;
+    private String name;
     public Unit(String name){
         this.name = name;
+        this.hp = 100;
     }
     public void shp(){
         this.hp-=5;
