@@ -1,24 +1,28 @@
 public class Unit {
     private int hp;
     private String name;
+    public Unit(int hp,String name){
+        this.hp=hp;
+        this.name=name;
+    }
     public Unit(String name){
+        this.hp=100;
+        this.name=name;
+    }
+    public int getHp() {
+        return hp;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+    public void setName(String name) {
         this.name = name;
-        this.hp = 100;
     }
-    public void shp(){
-        this.hp-=5;
-    }
-    public void php(){
-        if (this.hp+5<=100){
-            this.hp+=5;
-        }
-    }
-    public void printInfo(){
-        System.out.println("NPC name: "+this.name);
-        System.out.println("NPC "+this.name+" has HP: "+this.hp);
-    }
-    public void battle(Unit otherUnit){
-        if(this.hp>=otherUnit.hp)System.out.println(this.name+" has won");
-        else System.out.println(otherUnit.name+" has won");
+    public void heal(){
+        System.out.println(this.getName()+" вылечился");
+        this.hp=80;
     }
 }
